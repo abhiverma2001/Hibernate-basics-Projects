@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC 
+"-//Hibernate/Hibernate Mapping DTD//EN"
+"http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<hibernate-mapping>
+<class name="org.jsp.studentcrud.Student" table="student">
+<id name="id" column="id">
+<generator class="identity"></generator>
+</id>
+<property name="name" column="name"/>
+<property name="course" column="course"/>
+<property name="phone" column="phone"/>
+<property name="email" column="email"/>
+<property name="password" column="password"/>
+</class>
+</hibernate-mapping>
